@@ -31,6 +31,13 @@ app.get('/home',(req,res)=>{
   });
 })
 
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    pageTitle: 'Alt coins',
+    currentYear: new Date().getFullYear()
+  });
+});
+
 
 
 
